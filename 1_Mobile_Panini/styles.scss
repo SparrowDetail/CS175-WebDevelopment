@@ -40,7 +40,9 @@ body {
     width: $content-width;
     max-width: $content-max-width;
     max-height: 100vh;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
 }
 
 h1 {

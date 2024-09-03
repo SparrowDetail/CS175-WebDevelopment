@@ -23,7 +23,9 @@ body {
   width: 95%;
   max-width: 1080px;
   max-height: 100vh;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
 }
 
 h1 {
