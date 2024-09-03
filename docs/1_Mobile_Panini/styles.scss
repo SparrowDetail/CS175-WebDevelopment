@@ -1,0 +1,133 @@
+$font-color: #242424;
+$content-max-width: 1080px;
+$content-width: 95%;
+$gradient-primary-color: #CBD293;
+$gradient-edge: #313324;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+    color: $font-color;
+}
+
+body {
+    display: flex;
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        $gradient-edge 0%,
+        transparent 0.5%,
+        transparent 99.5%,
+        $gradient-edge 100%
+    ), linear-gradient(
+        90deg,
+        $gradient-edge 0%,
+        $gradient-primary-color 2%,
+        $gradient-primary-color 98%,
+        $gradient-edge 100%
+    );
+}
+
+.content-container {
+    margin: 2rem auto 0;
+    width: $content-width;
+    max-width: $content-max-width;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-row {
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.link {
+    display: flex;
+    place-items: center;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: $font-color;
+}
+
+.link:hover {
+    opacity: 0.7;
+}
+
+.link-img {
+    fill: $font-color;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 3.4rem;
+    height: 3.4rem;
+    width: fit-content;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#panini-img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    margin: 2rem auto;
+}
+
+.article-text {
+    p {
+        margin: 2rem 0;
+    }
+
+    p:first-of-type {
+        margin-top: 0;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .page-content {
+        display: block;
+    }
+
+    #page-heading {
+        margin-bottom: 1rem;
+    }
+
+    #panini-img {
+        float: right;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        width: 300px;
+        margin: 0 1rem 1rem 1rem;
+    }
+}
