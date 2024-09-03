@@ -4,7 +4,7 @@ const projectCards = [
     {
         title: "Mobile Panini",
         image: "./assets/panini-preview.png",
-        dir: "../1_Mobile_Panini/index.html",
+        dir: "./1_Mobile_Panini/index.html",
         description: `The first assignment for my University web development course. We were 
             tasked with creating a simple static webpage for a fictional restaurant called 
             Mobile Panini. The project originates from the "New Perspectives on HTML5 and CSS3, 
